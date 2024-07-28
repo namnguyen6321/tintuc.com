@@ -10,6 +10,7 @@
 <body>
     <?php
     echo 'Xin chao PHP';
+    echo 'dinh nam';
     ?>
 </body>
 
