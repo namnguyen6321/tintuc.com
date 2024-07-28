@@ -61,6 +61,10 @@ h1 {
 
 }
 
+.noi-dung ul li a {
+    text-decoration: none;
+    color: #999;
+}
 
 * {
     margin: 0;
@@ -98,7 +102,7 @@ body {
     width: 1140px;
 }
 
-.noi-dung h2 {
+.noi-dung h3 {
     color: #1f1f1f;
     font-size: 40px;
     margin-bottom: 17px;
