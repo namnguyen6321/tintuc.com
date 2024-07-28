@@ -12,7 +12,7 @@
     <div id="header">
         <nav class="conteiner">
             <a href="" id="logo">
-                <img src="assets/img/logo.jpg" alt="Tintuc">
+                <img src="\TINTUC.COM\assets\img\logo.jpg" alt="Tintuc">
             </a>
             <ul id="main-menu">
                 <li><a href="">Nóng </a></li>
@@ -33,16 +33,15 @@
         <h1>Tin tức</h1>
     </section>
     <?php
-    // 1.tạo kết nối
+
     include('connect.php');
 
     $sql = "SELECT * FROM tin1 WHERE 1";
 
     $data = mysqli_query($conn, $sql);
-    // 4.Phân tách dữ liệu
+
     $danhSachTin = [];
-    // MYSQLI_ASSOC lấy theo kiểu có dòng cột
-    // sử dụng hàm mysqli_fetch_array lấy 1 dong theo kiểu mảng trong $data lưu vào $arrDanhSachHS = [];
+
     while ($row = mysqli_fetch_array($data, MYSQLI_ASSOC)) {
         $danhSachTin[] = array(
             'ma_tin'        => $row['ma_tin'],
@@ -52,18 +51,17 @@
             'anh'           => $row['anh']
         );
     }
-    echo $danhSachTin['anh'];
+    // var_dump($danhSachTin);
     ?>
-    <img src="assets/img/" alt="">
     <section class="noi-dung">
         <ul class="danhsach-noidung clearfix">
             <?php foreach ($danhSachTin as $tin) : ?>
                 <li><a href="<?= $tin['duong_dan'] ?>">
-                        <p class="service-image"><img src="<?= $tin['anh'] ?>" alt="#" class="img-noidung"></p>
+                        <?php echo '<p class="service-image"><img src="' . $tin['anh'] . '" alt="#" class="img-noidung">'; ?>
+                        <!-- <p class="service-image"><img src="<?= $tin['anh'] ?>" alt="#" class="img-noidung"></p> -->
                         <div class="inner">
                             <h3><?= $tin['chu_de'] ?></h3>
-                            <p class="info"><?= $tin['tom_tat'] ?>
-                            </p>
+                            <p class="info"><?= $tin['tom_tat'] ?></p>
                         </div>
                     </a>
                 </li>
@@ -71,6 +69,7 @@
 
         </ul>
     </section>
+    <a href="insert.php">Thêm mới</a>
 
 </body>
 
