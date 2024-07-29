@@ -9,26 +9,9 @@
 </head>
 
 <body>
-    <div id="header">
-        <nav class="conteiner">
-            <a href="" id="logo">
-                <img src="\TINTUC.COM\assets\img\logo.jpg" alt="Tintuc">
-            </a>
-            <ul id="main-menu">
-                <li><a href="">Nóng </a></li>
-                <li><a href="">Mới</a></li>
-                <li><a href="">Video</a></li>
-                <li><a href="">Chủ Đề</a></li>
-                <li><a href="">Năng lượng tích cực</a></li>
-                <li><a href="">Khám phá thế giới </a></li>
-                <li><a href="">Khám phá Việt Nam</a></li>
-
-            </ul>
-        </nav>
-    </div>
-    <!-- <div>
-        <img src="assets/img/tin1-1.png" alt="banner">
-    </div> -->
+    <?php
+    include_once __DIR__ . '/header.php';
+    ?>
     <section id="banner">
         <h1>Tin tức</h1>
     </section>
