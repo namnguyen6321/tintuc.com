@@ -10,12 +10,13 @@
 
 <body>
     <?php
-    include_once __DIR__ . '/header.php';
+    include_once __DIR__ . '/header-qt.php';
     ?>
     <section id="banner">
         <h1>CHI TIẾT
             CẬP NHẬT</h1>
     </section>
+    <a href="insert-capnhat.php" class="styled-link">Thêm cập nhât mới</a>
     <?php
 
     include('connect.php');

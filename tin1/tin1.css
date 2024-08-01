@@ -138,3 +138,19 @@ body {
 .infor {
     font-size: 14px;
 }
+
+.styled-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #ecf0f1;
+    margin-left: 40px;
+}
+
+.styled-link:hover {
+    color: #ffffff;
+    background-color: #3498db;
+}
