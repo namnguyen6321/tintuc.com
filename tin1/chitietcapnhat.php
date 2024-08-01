@@ -20,7 +20,7 @@
 
     include('connect.php');
 
-    $sql = "SELECT * FROM cap_nhat WHERE 1";
+    $sql = "SELECT * FROM new WHERE 1";
 
     $data = mysqli_query($conn, $sql);
 
