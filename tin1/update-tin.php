@@ -7,17 +7,6 @@
     <title>Update</title>
     <link rel="stylesheet" href="update.css">
 </head>
-<style>
-    .update_box {
-        position: absolute;
-        top: 50px;
-        /* Adjust according to the height of your menu */
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-        /* Ensure it stays on top of other elements */
-    }
-</style>
 
 <body>
     <?php

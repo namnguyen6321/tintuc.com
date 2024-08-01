@@ -92,7 +92,9 @@
                 }
             }
         }
-    } ?>
+        echo '<script>location.href =" chitietcapnhat-qt.php"</script>';
+    }
+    ?>
 </body>
 
 </html>

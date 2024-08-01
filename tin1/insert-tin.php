@@ -93,6 +93,7 @@
             }
         }
     }
+    echo '<script>location.href =" tintuc-qt.php"</script>';
     ?>
 </body>
 

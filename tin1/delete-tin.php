@@ -8,5 +8,5 @@ $result = $conn->query($sql);
 echo $result;
 if ($result == TRUE) {
     echo 'Xoa thanh cong';
-    // echo '<script>location.href =" tintuc-qt.php"</script>';
+    echo '<script>location.href =" tintuc-qt.php"</script>';
 }

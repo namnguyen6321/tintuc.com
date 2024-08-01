@@ -1,0 +1,105 @@
+/* Cấu hình cho footer */
+.footer {
+    background-color: #282c34;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cấu hình cho nội dung của footer */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Cấu hình cho logo */
+.footer-logo h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #61dafb;
+}
+
+/* Cấu hình cho liên kết trong footer */
+.footer-links {
+    margin: 20px;
+}
+
+.footer-links h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #61dafb;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #61dafb;
+}
+
+/* Cấu hình cho thông tin liên hệ */
+.footer-contact {
+    margin: 20px;
+}
+
+.footer-contact h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #61dafb;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+/* Cấu hình cho các biểu tượng mạng xã hội */
+.footer-social {
+    margin: 20px;
+}
+
+.footer-social h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #61dafb;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #ccc;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #61dafb;
+}
+
+/* Cấu hình cho phần chân footer */
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+}
