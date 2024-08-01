@@ -25,7 +25,7 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
     <section id="banner">
         <h1>Tin tức</h1>
     </section>
-    <a href="insert-capnhap.php" class="styled-link">Thêm tin tức mới</a>
+    <a href="insert-tin.php" class="styled-link">Thêm tin tức mới</a>
     <?php
 
     include('connect.php');
@@ -45,7 +45,7 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
             'picture'           => $row['picture']
         );
         $danhSachTin = array_reverse($Tin);
-        $limit = 3;
+        $limit = 6;
     }
     // var_dump($danhSachTin);
     ?>
@@ -53,7 +53,7 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
         <ul class="danhsach-noidung clearfix">
             <?php foreach (array_slice($danhSachTin, 0, $limit) as $tin) : ?>
                 <li>
-                    <a href="delete-tin.php">Xóa</a>|| <a href="update-tin.php">Sửa</a>
+                    <a href="delete-tin.php?id=<?php echo $tin["id"] ?>">Xóa</a>|| <a href="update-tin.php?id=<?php echo $tin["id"] ?>">Sửa</a>
                     <?php echo '<p class="service-image"><img src="' . $tin["picture"] . '" alt="#" class="img-noidung">'; ?>
                     <div class="inner">
                         <h3><?= $tin['title'] ?></h3>

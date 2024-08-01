@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="dangnhap.css">
 </head>
 
 <body>
@@ -33,16 +34,20 @@
         }
     }
     ?>
+    <div class="login-wrapper">
+        <div class="login-form">
+            <h1>Đăng nhập</h1>
+            <form action="#" method="post">
+                <label for="username">Tài khoản:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required><br><br>
 
-    <form action="#" method="post">
-        <label for="username">Tài khoản:</label>
-        <input type="text" id="username" name="username" required><br><br>
-
-        <label for="password">Mật khẩu:</label>
-        <input type="password" id="password" name="password" required><br><br>
-
-        <input type="submit" name="submit" value="Đăng nhập">
-    </form>
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+                <button type="submit" name="submit">Đăng nhập</button>
+                <!-- <input type="submit" name="submit" value="Đăng nhập"> -->
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -32,7 +32,6 @@
             'id'             => $row['id'],
             'title'          => $row['title'],
             'text'           => $row['text'],
-            // 'duong_dan'         => $row['duong_dan'],
             'picture'        => $row['picture']
         );
     }
@@ -44,6 +43,7 @@
         <ul class="danhsach-noidung clearfix">
             <?php foreach (array_slice($listcapnhat, 0, $limit) as $cn) : ?>
                 <li>
+                    <a href="delete-capnhat.php?id=<?php echo $cn["id"] ?>">Xóa</a>|| <a href="update-capnhat.php?id=<?php echo $cn["id"] ?>">Sửa</a>
                     <?php echo '<p class="service-image"><img src="' . $cn['picture'] . '" alt="#" class="img-noidung">'; ?>
                     <div class="inner">
                         <h3><?= $cn['title'] ?></h3>

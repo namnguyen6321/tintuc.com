@@ -1,84 +1,87 @@
-/* Toàn bộ body */
+/* Reset và cấu hình cơ bản cho body */
 body {
-    background-color: #f4f4f9;
-    /* Màu nền nhạt */
-    font-family: Arial, sans-serif;
-    /* Font chữ */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* Chiều cao màn hình */
     margin: 0;
-}
-
-/* Container chứa form đăng nhập */
-.login-container {
-    background-color: #ffffff;
-    /* Màu nền trắng */
-    border-radius: 8px;
-    /* Bo góc */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Đổ bóng */
-    padding: 20px;
-    width: 300px;
-    /* Chiều rộng form */
-}
-
-/* Tiêu đề form */
-h1 {
-    margin-bottom: 20px;
-    text-align: center;
     color: #333;
 }
 
-/* Nhóm input */
-.input-group {
-    margin-bottom: 15px;
-}
-
-/* Label cho các input */
-.input-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #555;
-}
-
-/* Các input */
-.input-group input {
+/* Wrapper để căn giữa form */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    padding: 10px;
+    max-width: 480px;
+}
+
+/* Cấu hình form đăng nhập */
+.login-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+/* Tiêu đề của form */
+.login-form h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+}
+
+/* Label cho các trường nhập liệu */
+.login-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #666;
+}
+
+/* Các trường nhập liệu */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 6px;
+    font-size: 16px;
     box-sizing: border-box;
-    /* Bao gồm padding và border vào tổng chiều rộng */
+    /* Đảm bảo padding không làm thay đổi kích thước tổng thể */
+    transition: border-color 0.3s ease;
+}
+
+/* Placeholder có màu sắc nhạt hơn */
+.login-form input::placeholder {
+    color: #999;
+}
+
+/* Hiệu ứng border khi focus vào các trường nhập liệu */
+.login-form input:focus {
+    border-color: #007bff;
+    outline: none;
 }
 
 /* Nút đăng nhập */
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #3498db;
-    /* Màu xanh dương */
+.login-form button {
+    background-color: #007bff;
+    color: #fff;
     border: none;
-    border-radius: 4px;
-    color: #ffffff;
-    /* Màu chữ trắng */
-    font-size: 16px;
+    padding: 12px;
+    border-radius: 6px;
     cursor: pointer;
+    font-size: 16px;
+    width: 100%;
     transition: background-color 0.3s ease;
 }
 
-/* Hiệu ứng hover cho nút */
-button:hover {
-    background-color: #2980b9;
-    /* Màu xanh dương đậm hơn khi hover */
-}
-
-/* Thông báo lỗi */
-.error {
-    color: #e74c3c;
-    /* Màu đỏ cho thông báo lỗi */
-    text-align: center;
-    margin-top: 10px;
+/* Hiệu ứng khi di chuột qua nút */
+.login-form button:hover {
+    background-color: #0056b3;
 }

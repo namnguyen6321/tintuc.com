@@ -10,7 +10,7 @@
             <li><a href="/tintuc.com/tin1/chitietcapnhat-qt.php">CHI TIẾT CẬP NHẬT</a></li>
             <li><a href="">ESPORTS</a></li>
             <li><a href="">THÊM</a></li>
-            <li><a href="">Đăng nhập</a></li>
+            <li><a href="/tintuc.com/tin1/tintuc.php">Thoát</a></li>
 
         </ul>
     </nav>

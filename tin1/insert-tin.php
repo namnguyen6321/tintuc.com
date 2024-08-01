@@ -26,7 +26,7 @@
 
     <?php
     include 'connect.php';
-    $redirectURL = "http://localhost:3000/index.php?page_layout=thongtin";
+    // $redirectURL = "http://localhost:3000/index.php?page_layout=thongtin";
 
     if (isset($_POST['add'])) {
         // Xử lý ảnh
@@ -92,7 +92,8 @@
                 }
             }
         }
-    } ?>
+    }
+    ?>
 </body>
 
 </html>
